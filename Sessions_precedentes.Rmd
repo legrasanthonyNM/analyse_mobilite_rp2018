@@ -8,16 +8,19 @@ output: html_document
 
 # Session 1
 
-Présentation de l'interface
+Présentation de l'interface : https://juba.github.io/tidyverse/02-prise_en_main.html
+
+
 
 Intercommunalités : https://www.insee.fr/fr/information/2510634
 Communes : https://www.insee.fr/fr/information/5057840
 Flux : 
 
+## Import de données
+
 
 ```{r}
-library(tidyverse)
-library(arrow)
+library(readr)
 library(readxl)
 
 varmod <- read_delim("data/Varmod_MOBPRO_2018.csv", delim = ";")
@@ -26,21 +29,15 @@ flux <- read_delim("data/FD_MOBPRO_2018.csv", delim = ";",
                    trim_ws = TRUE,
                    col_types = cols(DCFLT = col_character(),
                                     REGLT = col_character()))
-
 EPCI_FR <- read_excel("data/Intercommunalite-Metropole_au_01-01-2021.xlsx", 
     sheet = "Composition_communale", skip = 5)
 
-communes_NM <- EPCI_FR %>%
-  filter(LIBEPCI == "Nantes Métropole")
-
-flux_NM <- flux %>%
-  filter(COMMUNE %in% communes_NM$CODGEO | DCLT %in% communes_NM$CODGEO)
-
-test <- flux_NM %>%
-  group_by(TRANS) %>%
-  summarise(n = n())
-
-sum(test$n)
 
 ```
 
+
+
+## Session 2
+Giter des résultats
+A rappeler : la console
+Les imports
