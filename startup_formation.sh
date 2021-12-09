@@ -27,6 +27,7 @@ mc cp s3/fbedecarrats/diffusion/contenu_RP2018_mobpro.pdf $DOC_DIR
         {
             message('On charge directement le bon projet :-) ')
             rstudioapi::openProject('~/analyse_mobilite_rp2018')
+            rstudioapi::applyTheme('Merbivore')
             }
             }, action = 'append')
             " >> /home/rstudio/.Rprofile
