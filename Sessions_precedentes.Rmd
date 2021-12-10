@@ -8,15 +8,8 @@ output: html_document
 
 # Session 1
 
-<<<<<<< HEAD
-Présentation de l'interface : https://juba.github.io/tidyverse/02-prise_en_main.html
-
-
-=======
-## Présentation de l'interface https://juba.github.io/tidyverse/02-prise_en_main.html
-Revoir la console
-Les objets et vecteurs
->>>>>>> 2bfbbed78cfe8d9294abeb17c128f2d11fc554b7
+## Présentation de l'interface 
+https://juba.github.io/tidyverse/02-prise_en_main.html
 
 
 ## Présentation des sources
@@ -25,13 +18,11 @@ Communes : https://www.insee.fr/fr/information/5057840
 Flux : https://www.insee.fr/fr/statistiques/5395749?sommaire=5395764
 
 
-<<<<<<< HEAD
 ## Import de données
 
 =======
 # Import de fichiers
 https://juba.github.io/tidyverse/07-import.html
->>>>>>> 2bfbbed78cfe8d9294abeb17c128f2d11fc554b7
 
 ```{r}
 library(readr)
@@ -51,14 +42,18 @@ EPCI_FR <- read_excel("data/Intercommunalite-Metropole_au_01-01-2021.xlsx",
 
 
 
-## Session 2
-<<<<<<< HEAD
-Giter des résultats
-A rappeler : la console
-=======
+## Session 2 GIT et collaboration sur SSP Cloud
+
+Rappel
+- la console
+- Les vecteurs
+- Les imports
+https://juba.github.io/tidyverse/02-prise_en_main.html
+
 GITer des résultats
-A rappeler
-la console
-Les vecteurs
->>>>>>> 2bfbbed78cfe8d9294abeb17c128f2d11fc554b7
-Les imports
+
+# Session 3 Manipuler les données
+
+Raffraichir les mises à jour du répo principal.
+Fonctions
+Filtrer les données 
