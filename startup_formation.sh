@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Create variables
-WORK_DIR=/home/rstudio/analyse_mobilite_rp2018
+WORK_DIR=/home/analyse_mobilite_rp2018
 REPO_URL=https://github.com/anthonylegrasNM/analyse_mobilite_rp2018
 DATA_DIR=${WORK_DIR}/data
 DOC_DIR=${WORK_DIR}/documentation
